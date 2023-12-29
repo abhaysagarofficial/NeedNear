@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amazon-Inspired Signup</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(60deg, lightblue, pink);
+      color: #100e0e;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .signup-container {
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      text-align: center;
+      width: 400px;
+      margin: 20px;
+      box-sizing: border-box;
+    }
+
+    h2 {
+      color: #111;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      text-align: left;
+      margin-bottom: 8px;
+      color: #333;
+      font-size: 14px;
+    }
+
+    #mobileNumber {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+      box-sizing: border-box;
+    }
+
+    #getOtpBtn {
+      background-color: #f87e04;
+      color: #fff;
+      border: none;
+      padding: 12px 20px;
+      font-size: 16px;
+      border-radius: 4px;
+      cursor: pointer;
+      /* margin-top: 20px; */
+      transition: background-color 0.3s;
+    }
+
+    #getOtpBtn:hover {
+      background-color: #e6e5e2;
+    }
+
+    .amazon-logo {
+      width: 120px;
+      /* margin-bottom: 20px; */
+    }
+  </style>
+</head>
+<body>
+
+<div class="signup-container">
+  <img src="logo.jpeg" alt="NeedNear Logo" class="amazon-logo">
+  <h1>NeedNear</h1>
+  <h2>Create Account</h2>
+  <label for="mobileNumber">Mobile Number:</label>
+  <input type="text" id="mobileNumber" style="margin-bottom: 30px;" placeholder="Enter your mobile number">
+
+  <button id="getOtpBtn" onclick="getOtp()"><a href="signup.html">Get OTP</a></button>
+</div>
+
+<script>
+  function getOtp() {
+    // Add your logic to generate and send OTP here
+    alert('OTP sent successfully!');
+  }
+</script>
+
+</body>
+</html>

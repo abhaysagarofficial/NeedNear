@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeedNear Payment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            margin: 20px;
+        }
+
+        .payment-container {
+            max-width: 600px;
+            margin: auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .payment-options {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+        }
+
+        .payment-option {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .payment-option:hover {
+            background-color: #f0f0f0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+<div class="payment-container">
+    <img src="logo.jpeg" alt="NeedNear Logo">
+    <h1>NeedNear Payment</h1>
+    <p>Select your preferred payment method:</p>
+
+    <div class="payment-options">
+        <div class="payment-option">
+            <a href="creditcard.html">
+                <img src="cardi.png" alt="Credit Card">
+                <p>Credit Card</p>
+            </a>
+        </div>
+
+        <div class="payment-option">
+            <a href="paytm.html">
+                <img src="paytm.png" alt="Paytm">
+                <p>Paytm</p>
+            </a>
+        </div>
+
+        <div class="payment-option">
+            <a href="googlepay.html">
+                <img src="googlepay.png" alt="Google Pay">
+                <p>Google Pay</p>
+            </a>
+        </div>
+
+        <div class="payment-option">
+            <a href="">
+                <img src="cod.png" alt="COD logo">
+                <p>COD</p>
+            </a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

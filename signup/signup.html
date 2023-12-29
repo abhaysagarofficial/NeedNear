@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fancy Signup</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(60deg, lightblue, pink);
+      color: #2d3748;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .signup-container {
+      display: flex;
+      background-color: rgba(255, 255, 255, 0.95);
+      border-radius: 15px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      padding: 20px;
+      text-align: center;
+      width: 800px;
+      box-sizing: border-box;
+    }
+
+    .personal-details,
+    .location-details {
+      flex: 1;
+      padding: 20px;
+      text-align: left;
+    }
+
+    h2 {
+      color: #2d3748;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      text-align: left;
+      margin-top: 16px;
+      color: #4a5568;
+      font-size: 14px;
+    }
+
+    input {
+      width: 100%;
+      padding: 12px;
+      margin-top: 8px;
+      border: 1px solid #cbd5e0;
+      border-radius: 6px;
+      font-size: 16px;
+      box-sizing: border-box;
+    }
+
+    #submitBtn {
+      background-color: rgb(237, 132, 4);
+      color: #fff;
+      border: none;
+      padding: 14px 20px;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    #submitBtn:hover {
+      background-color: rgb(251, 249, 248);
+    }
+
+    .amazon-logo {
+      width: 100px;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="signup-container">
+  <div class="personal-details">
+    <div style="display: flex;">
+      <img src="logo.jpeg" alt="NeedNear Logo" class="amazon-logo">
+      <h1 style="margin-left: 10px;">NeedNear</h1>
+    </div>
+
+    <h2>Personal Details</h2>
+    
+    <label for="fullName">Full Name:</label>
+    <input type="text" id="fullName" placeholder="Enter your full name">
+
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob">
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" placeholder="Enter your email">
+  </div>
+
+  <div class="location-details">
+    <h2>Location Details</h2>
+
+    <label for="pinCode">Pin Code:</label>
+    <input type="text" id="pinCode" placeholder="Enter your pin code">
+
+    <label for="landmark">Landmark:</label>
+    <input type="text" id="landmark" placeholder="Enter a landmark">
+
+    <label for="address">Complete Address:</label>
+    <input type="text" id="address" placeholder="Enter your complete address" style="margin-bottom: 30px;">
+
+    <button id="submitBtn" onclick="submitForm()">Submit</button>
+  </div>
+</div>
+
+<script>
+  function submitForm() {
+    // Add your logic to process the form data here
+    alert('Form submitted successfully!');
+  }
+</script>
+
+</body>
+</html>

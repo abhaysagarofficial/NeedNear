@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="credit.css">
+    <title>Credit Card Payment</title>
+</head>
+<body>
+
+<div class="payment-box">
+    <form id="payment-form">
+        <label for="card-number">Card Number:</label>
+        <input type="text" id="card-number" placeholder="Card Number" required>
+
+        <label for="cardholder-name">Cardholder Name:</label>
+        <input type="text" id="cardholder-name" placeholder="Cardholder Name" required>
+
+        <div class="expiration-cvc">
+            <div class="expiration">
+                <label for="expiration">Expiration Date:</label>
+                <input type="text" id="expiration" placeholder="MM/YYYY" required>
+            </div>
+
+            <div class="cvc">
+                <label for="cvc">CVC:</label>
+                <input type="text" id="cvc" placeholder="CVC" required>
+            </div>
+        </div>
+
+        <button type="button" onclick="submitPayment()">Submit Payment</button>
+    </form>
+</div>
+
+<script>
+    function submitPayment() {
+        // Your payment processing logic here
+    }
+</script>
+
+</body>
+</html>

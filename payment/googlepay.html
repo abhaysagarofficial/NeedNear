@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="google.css">
+    <title>Google Pay UPI Verification</title>
+</head>
+<body>
+
+<div class="container">
+    <div class="verification-box">
+        <h2>Verify UPI ID</h2>
+        <form id="upi-verification-form">
+            <label for="upi-id">Enter UPI ID:</label>
+            <input type="text" id="upi-id" placeholder="yourname@bank" required>
+
+            <button type="button" onclick="showProceedToGPay()">Verify UPI ID</button>
+        </form>
+
+        <div id="proceed-to-gpay" class="hidden">
+            <img src="https://hindubabynames.info/wp-content/themes/hbn_download/download/banking-and-finance/google-pay-logo.png" alt="Google Pay Logo" class="gpay-logo">
+            <p>Proceed to Google Pay for payment.</p>
+            <button type="button" onclick="proceedToGPay()">Proceed to Google Pay</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    function showProceedToGPay() {
+        document.getElementById('upi-verification-form').classList.add('hidden');
+        document.getElementById('proceed-to-gpay').classList.remove('hidden');
+    }
+
+    function proceedToGPay() {
+    
+        alert("Redirecting to Google Pay...");
+    }
+</script>
+
+</body>
+</html>
